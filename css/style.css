@@ -1,0 +1,183 @@
+body {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    
+}
+* {
+    box-sizing: border-box;
+}
+
+p {
+    color: hsl(257, 7%, 63%);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 95%;
+   
+}
+
+/* Navigation */
+
+nav {
+    padding-top: 0.5rem;
+    margin-bottom: 8rem;
+    width: 100%;
+}
+
+.logo {
+    max-height: 200px;
+    max-width: 200px;
+    float: left;
+    margin-top: -42px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 25px;    
+}
+
+li {
+    float: left;
+    padding-right: 20px;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(257, 7%, 63%);
+}
+.navright {
+    float: right;
+}
+
+.btn1 {
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -15px; 
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+/* Main */
+.mained {
+    display: flex;
+    padding-left: 5.5rem;
+    margin-bottom: 10rem;
+}
+
+.column {
+    flex: 50%;
+}
+
+.mained h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color:   hsl(260, 8%, 14%);
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-right: 1rem;
+    margin-bottom: 0;   
+}
+
+.btn2 {
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 20px;
+    border: none;
+    padding: 12px 36px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px; 
+}
+
+.aside {
+    margin-right: -10rem;   
+    margin-top: -2rem;
+    
+}
+
+
+/* Shorten URL box */
+.shorten {
+    margin-left: 12rem ;
+    width: 80%;
+    margin-bottom: 8rem;
+    height: 7rem;
+    border-radius: 10px;
+    background-image: url("../images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-color:  hsl(257, 27%, 26%);
+    clear: both;
+}
+
+input[type="text"] {
+    padding: 15px 300px;
+    border-radius: 10px;
+    border: none;
+    margin: 35px 15px 25px 95px;
+    
+}
+
+::placeholder {
+    color: hsl(257, 7%, 63%);
+    font-size: 15px;
+    text-align: left;
+    font-weight: 400;
+}
+
+input[type="button"] {
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 10px;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    
+    font-size: 15px;
+}
+
+.advanced {
+    background-color:  hsla(0, 0%, 66%, 0.048);
+    max-width: 1440px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
