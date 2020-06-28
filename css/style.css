@@ -3,6 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     
+    
 }
 * {
     box-sizing: border-box;
@@ -13,9 +14,15 @@ p {
 }
 
 .container {
-    margin: 0 auto;
+    /* margin: 0 auto;
     max-width: 1440px;
-    width: 95%;
+    width: 95%; */
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    
    
 }
 
@@ -54,6 +61,7 @@ li a {
 }
 .navright {
     float: right;
+    padding-right: 15rem;
 }
 
 .btn1 {
@@ -120,7 +128,9 @@ li a {
     background-image: url("../images/bg-shorten-desktop.svg");
     background-size: cover;
     background-color:  hsl(257, 27%, 26%);
-    clear: both;
+    margin-bottom: -3rem;
+   
+    
 }
 
 input[type="text"] {
@@ -146,20 +156,56 @@ input[type="button"] {
     padding: 15px 25px;
     text-align: center;
     cursor: pointer;
-    font-weight: bold;
-    
+    font-weight: bold; 
     font-size: 15px;
 }
 
 .advanced {
-    background-color:  hsla(0, 0%, 66%, 0.048);
-    max-width: 1440px;
-    
-    
+    background-color:  hsla(0, 0%, 66%, 0.308);
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    z-index: -1;
+    clear: both;
+ 
 }
 
+/* Advanced Columns Section */
+.adv {
+    text-align: center;
+    padding-top: 7rem;
 
+}
 
+.adv h2 {
+    font-weight: 700;
+    color:   hsl(260, 8%, 14%);
+}
+
+.columned {
+    margin-left: 7rem;
+    margin-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+}
+
+.columns {
+    max-width: 350px;
+    background-color: white;
+    border-radius: 5px;
+    flex: 30%;
+    margin-right: 4rem;
+}
+
+.imgrd {
+    border-radius: 50%;
+    background-color:  hsl(257, 27%, 26%);
+    padding: 10px;
+    height: 80px;
+
+    
+   
 
 
 
