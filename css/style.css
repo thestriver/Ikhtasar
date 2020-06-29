@@ -5,6 +5,7 @@ body {
     
     
 }
+
 * {
     box-sizing: border-box;
 }
@@ -29,7 +30,7 @@ p {
 /* Navigation */
 
 nav {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     margin-bottom: 8rem;
     width: 100%;
 }
@@ -39,25 +40,26 @@ nav {
     max-width: 200px;
     float: left;
     margin-top: -42px;
-    margin-left: 4rem;
+    margin-left: 10.5rem;
     margin-right: 4rem;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     padding-top: 25px;    
 }
 
-li {
+nav li {
     float: left;
     padding-right: 20px;
 }
 
-li a {
+nav li a {
     display: inline-block;
     text-decoration: none;
     text-align: center;
     color: hsl(257, 7%, 63%);
+    font-weight: 600;
 }
 .navright {
     float: right;
@@ -75,12 +77,13 @@ li a {
     margin-top: -15px; 
     font-weight: bold;
     font-size: 16px; 
+    margin-left: 50px;
 }
 
 /* Main */
 .mained {
     display: flex;
-    padding-left: 5.5rem;
+    padding-left: 12rem;
     margin-bottom: 10rem;
 }
 
@@ -89,7 +92,7 @@ li a {
 }
 
 .mained h1 {
-    font-size: 65px;
+    font-size: 80px;
     font-weight: 700;
     color:   hsl(260, 8%, 14%);
     line-height: 1.2;
@@ -98,12 +101,18 @@ li a {
     margin-bottom: 0;   
 }
 
+.mained p {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 0;
+}
+
 .btn2 {
     color: white;
     background-color: hsl(180, 66%, 49%);
     border-radius: 20px;
     border: none;
-    padding: 12px 36px;
+    padding: 13px 38px;
     text-align: center;
     cursor: pointer;
     font-weight: bold;
@@ -112,39 +121,38 @@ li a {
 }
 
 .aside {
-    margin-right: -10rem;   
-    margin-top: -2rem;
+    margin-right: -8rem;   
+    margin-top: -1.8rem;
     
+}
+
+.aside img {
+    height: 110%;
 }
 
 
 /* Shorten URL box */
 .shorten {
     margin-left: 12rem ;
-    width: 80%;
-    margin-bottom: 8rem;
-    height: 7rem;
+    width: 75%;
+    height: 10rem;
     border-radius: 10px;
     background-image: url("../images/bg-shorten-desktop.svg");
     background-size: cover;
     background-color:  hsl(257, 27%, 26%);
-    margin-bottom: -3rem;
-   
-    
+    margin-bottom: -5rem;
 }
 
 input[type="text"] {
-    padding: 15px 300px;
+    padding: 22px 350px;
     border-radius: 10px;
     border: none;
-    margin: 35px 15px 25px 95px;
-    
+    margin: 55px 15px 10px 55px;
 }
 
-::placeholder {
+input[type="text"]::placeholder {
     color: hsl(257, 7%, 63%);
-    font-size: 15px;
-    text-align: left;
+    font-size: 17px;
     font-weight: 400;
 }
 
@@ -153,13 +161,15 @@ input[type="button"] {
     background-color: hsl(180, 66%, 49%);
     border-radius: 10px;
     border: none;
-    padding: 15px 25px;
+    padding: 18px 40px;
     text-align: center;
     cursor: pointer;
     font-weight: bold; 
-    font-size: 15px;
+    font-size: 20px;
 }
 
+
+/* Advanced Columns Section */
 .advanced {
     background-color:  hsla(0, 0%, 66%, 0.308);
     position: relative;
@@ -168,49 +178,214 @@ input[type="button"] {
     left: 0;
     z-index: -1;
     clear: both;
- 
 }
-
-/* Advanced Columns Section */
 .adv {
     text-align: center;
-    padding-top: 7rem;
+    padding-top: 10rem;
 
 }
 
 .adv h2 {
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 45px;
     color:   hsl(260, 8%, 14%);
+    margin-bottom: 0;
+}
+
+.adv p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0;
 }
 
 .columned {
-    margin-left: 7rem;
+    margin-left: 13rem;
     margin-top: 7rem;
     padding-bottom: 7rem;
-    display: flex;
+}
+.columned:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.columns {
-    max-width: 350px;
-    background-color: white;
-    border-radius: 5px;
-    flex: 30%;
-    margin-right: 4rem;
+.columned h3 {
+    color:  hsl(260, 8%, 14%);
+    padding-left: 40px; 
+}
+
+.columned p {
+    font-size: 16px;
+    padding: 0 40px 40px 40px;
+    margin-bottom: 2rem;
 }
 
 .imgrd {
     border-radius: 50%;
     background-color:  hsl(257, 27%, 26%);
-    padding: 10px;
-    height: 80px;
+    padding: 20px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: 30px;
+}
 
+.column1 {
+    max-width: 350px;
+    max-height: 270px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    
+}
+
+.square {
+    margin-top: -13rem;
+    margin-left: 21.9rem;
+    background-color: hsl(180, 66%, 49%);
+    width: 63px;
+    height: 10px;
+    float: left;
+    
+}
+
+.column2 {
+   margin-top: 3rem;
+   margin-left: 4rem;
+   max-width: 350px;
+   max-height: 290px;
+   background-color: white;
+   border-radius: 5px;
+   margin-right: 4rem;
+   float: left;
+}
+
+.square1 {
+    margin-top: -13rem;
+    margin-left: 47.8rem;
+    background-color: hsl(180, 66%, 49%);
+    width: 63px;
+    height: 10px;
+    float: left;
+    
+}
+
+.column3 {
+   margin-top: 6rem;
+   max-width: 350px;
+   max-height: 290px;
+   background-color: white;
+   border-radius: 5px;
+   margin-right: 4rem;
+   float: left;
+}
+
+
+
+/* Call */
+.call {
+    text-align: center;
+    height: 280px;
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-size: cover;
+    background-color:  hsl(257, 27%, 26%);
+    margin-top: -3rem;
+    margin-bottom: -1rem;
+    padding-bottom: 4rem;
+}
+
+.call h2 {
+    padding-top: 4rem;
+    font-size: 48px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+
+.btn3 {
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 20px;
+    border: none;
+    padding: 20px 56px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px; 
+}
+
+
+
+/* Footer */
+footer {
+    background-color:hsl(260, 8%, 14%);
+    width: 100%;
+    height: 340px;
+}
+
+footer h4 {
+    color: white;
+    font-weight: 500;
+    padding-top: 3rem;
+    padding-left: 40px ;
+}
+
+footer ul {
+    list-style-type: none ;
+}
+
+footer li {
+    color: hsl(257, 7%, 63%);
+    
+}
+
+footer img {
+    height: 29px;
+}
+
+.foot {
+    float: left;
+    
+}
+
+.foot1 {
+    width: 35%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+
+}
+
+.foot1 h1 {
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+.foot2 {
+    width: 15%;
+    
+}
+
+.foot3 {
+    width: 13%;
+}
+.foot4 {
+    width: 13%;
+}
+
+.foot5 {
+    width: 24%;
     
    
+}
 
-
-
-
-
+.foot5 li {
+    float: left;
+    padding-right: 30px;
+    padding-top: 4rem;
+    
+}
 
 
 
