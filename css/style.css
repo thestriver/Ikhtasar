@@ -396,9 +396,34 @@ footer img {
 
 
 
-/* Responsive */
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
+/* Responsive Mobile*/
+@media screen and (max-width: 480px) {
+    nav {
+        display: none;
     }
+
+    .mained {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .column {
+        flex: 100%;
+    }
+    .main {
+        /* order: 2; used when flex-flow: column; */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .aside {
+        /* order: 1; */
+        margin-top: 3rem;
+    }
+    
+    .aside {
+        min-width: 500px;
+    }
+    
+
   }
